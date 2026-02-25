@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aizen | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Aizen</h1>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h2>Crafting Stories Through Editing</h2>
+      <p>
+        Professional video editing focused on cinematic visuals, engaging
+        storytelling, and high-quality content for brands and creators.
+      </p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK SECTION -->
+  <section id="work" class="section">
+    <div class="container">
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="grid">
+
+        <div class="card" onclick="openVideo('mha.mp4')">
+          <video muted preload="metadata">
+            <source src="mha.mp4#t=5" type="video/mp4">
+          </video>
+          <h3>Project 1</h3>
+        </div>
+
+        <div class="card" onclick="openVideo('oye oye.mp4')">
+          <video muted preload="metadata">
+            <source src="oye oye.mp4#t=4" type="video/mp4">
+          </video>
+          <h3>Project 2</h3>
+        </div>
+
+        <div class="card" onclick="openVideo('fight_1.mp4')">
+          <video muted preload="metadata">
+            <source src="fight_1.mp4#t=6" type="video/mp4">
+          </video>
+          <h3>Project 3</h3>
+        </div>
+
+        <div class="card" onclick="openVideo('Intro_Template_1.mp4')">
+          <video muted preload="metadata">
+            <source src="Intro_Template_1.mp4" type="video/mp4">
+          </video>
+          <h3>Project 4</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO MODAL -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeVideo()">&times;</span>
+
+      <div class="video-wrapper">
+        <video id="modalVideo" controls autoplay>
+          <source id="videoSource" src="" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section dark">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm a dedicated video editor specializing in cinematic reels,
+        YouTube content, and promotional videos. These are one of my best works, i can also edit gaming videos,
+         Podcast clips and many more.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container center">
+      <h2 class="section-title">Let’s Work Together</h2>
+      <p>Email: ghostsniper9653@gmail.com</p>
+      <p>Instagram: @aizen_6171</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Aizen. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
